@@ -48,19 +48,23 @@
     "strict_route": true,
     "stack": "system",
     "sniff": true,
+    "sniff_timeout": "10ms",
+    "sniff_override_destination": true,
     "platform": {
       "http_proxy": {
         "enabled": true,
-        "server": "127.0.0.1",
+        "server": "0.0.0.0",
         "server_port": 2080
       }
     }
   },
   {
     "type": "mixed",
-    "listen": "127.0.0.1",
+    "listen": "0.0.0.0",
     "listen_port": 2080,
     "sniff": true,
+    "sniff_timeout": "10ms",
+    "sniff_override_destination": true,
     "users": []
   }
 ],
